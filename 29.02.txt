@@ -1,0 +1,91 @@
+CREATE TABLE USERS (
+login VARCHAR (20) NOT NULL,
+pass VARCHAR (30) NOT NULL,
+email VARCHAR (40) NOT NULL,
+last_activity TIMESTAMP WITH TIME ZONE NOT NULL,
+registration_date DATE NOT NULL,
+gender BOOLEAN NOT NULL,
+birthday_date DATE NOT NULL,
+first_name VARCHAR (30) NOT NULL,
+last_name VARCHAR (30) NOT NULL
+);
+
+
+ALTER TABLE USERS
+ADD COLUMN photo TEXT NOT NULL;
+ALTER TABLE USERS
+RENAME email TO nickname;
+ALTER TABLE USERS
+DROP COLUMN login;
+
+
+ALTER TABLE USERS
+RENAME nickname TO login;
+
+//создаем новую таблицу
+
+CREATE TABLE movie (
+title VARCHAR (30) NOT NULL,
+director VARCHAR (30) NOT NULL,
+country VARCHAR (30) NOT NULL,
+pub_year INTEGER NOT NULL,
+rank REAL NOT NULL,
+duration INTEGER NOT NULL,
+category VARCHAR (30) NOT NULL
+);
+
+ALTER TABLE movie
+ADD COLUMN poster TEXT NOT NULL;
+
+//создание пользователя
+
+INSERT INTO USERS (
+pass,
+login,
+last_activity,
+registration_date,
+gender,
+birthday_date,
+first_name,
+last_name,
+photo
+)
+VALUES (
+'215', 
+'nastya',
+NOW(),
+NOW(),
+True,
+'1997-07-03',
+'Anastasia',
+'Suvorova',
+'vk.com/photo33584776_381058487'
+)
+
+//создаем фильм
+
+INSERT INTO movie (
+title,
+director,
+country,
+pub_year,
+rank,
+duration,
+category,
+poster
+)
+VALUES (
+'Зверополис', 
+'Байрон Ховард, Рич Мур',
+'США',
+'2016',
+'8',
+'108',
+'мультфильм, комедия',
+'www.kinopoisk.ru/images/film_big/775276.jpg'
+)
+
+//ИЗВЛЕЧЕНИЕ ДАННЫХ
+
+SELECT*FROM MOVIE;
+SELECT*FROM USERS;

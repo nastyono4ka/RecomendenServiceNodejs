@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+	<head>
+		<meta charset="UTF-8">
+		<title>RecomendenService</title>
+		<script src="II-semestr.js"></script>
+		<link href="https://yastatic.net/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	</head>
+	<body onload="afterLoad()">
+	
+<body>
+	<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+		<table>
+
+	<td align="center"colspan="4"> <p style="font-size:50px;">Фильмы</td>
+<tr>
+	<td aligh="сenter"><img id="perviy" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSm_W6UarYHjKWCLd1zpupuMSvnfu1lZEGjqSlwp8KqxKLEgI1_" width="150" height="211" hspace="4" vspace="4" border="6" class="img" >
+		<button class="btn btn-small btn-success" id = kno1 type="button">♥LIKE♥ </button> <button class="btn btn-small btn-danger" id = kno type="button">DISLIKE</button> <h4><p class="text-center">Рассомаха</p></h4></td>
+	<td aligh="сenter"><img id="perviy-2" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmP2V_kEF_E9M_LzzxXuPxALGZAalt5zBdUgvc5M-JRLDX5T73" width="150" height="211" hspace="4" vspace="4" border="6"  class="img" >
+		<button class="btn btn-small btn-success"  type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger"  type="button">DISLIKE</button> <h4><p class="text-center">Малефисента</p></h4></td>
+	<td aligh="сenter"><img id="perviy-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAwuzDLcQw9TVgNM-usaBLqyuWMi9c9ym3J9cxArDKcvVUhjUi" width="150" height="211" hspace="4" vspace="4" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Ральф</p></h4></td>
+	<td aligh="сenter"><img id="perviy-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtNum_tjMGE_H2Kx0-K1ic998w3QygCaAHnMta6fTkVu6eS7Of2A" width="150" height="211" hspace="4" vspace="4" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Мастер</p></h4></td>
+</tr>
+	<td aligh="сenter"><img id="vtoroy" src="http://www.kinopoisk.ru/images/film_big/775276.jpg" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Зверополис</p></h4></td>
+	<td aligh="сenter"><img id="vtoroy-2" src="http://www.kinopoisk.ru/images/film_big/840818.jpg" width="150" height="211" hspace="4" vspace="20" border="6"  class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Чемпионы</p></h4></td>
+	<td aligh="сenter"><img id="vtoroy-3" src="http://www.kinopoisk.ru/images/film_big/80749.jpg" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Знахарь</p></h4></td>
+	<td aligh="сenter"><img id="vtoroy-4" src="http://www.kino-teatr.ru/movie/poster/85096/68423.jpg" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Метель</p></h4></td>
+</tr>
+	<td aligh="сenter"><img id="tretiy" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoQaQBMKUzL7Ie1WL033IdpOkT-_S4yfSCgDhjmr6D4BKwpoFYgA" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Ультраамериканцы</p></h4></td>
+	<td aligh="сenter"><img id="tretiy-2" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlwWywtyIcx2S0YfgYrpOViPVx3WsVljjuc_qmsfITq4kStz7b" width="150" height="211" hspace="4" vspace="20" border="6"  class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Суррогаты</p></h4></td>
+	<td aligh="сenter"><img id="tretiy-3" src="http://horrorzone.ru/uploads/_pages/45894/queen_keyart_poster.jpg" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Пиковая Дама</p></h4></td>
+	<td aligh="сenter"><img id="tretiy-4" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjNUzwXlhS7rbb0y8N0LeRU42DVpkLcnYc_fE0Xna-2eeXqLo5" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">5-я Волна</p></h4></td>
+</tr>
+	<td aligh="сenter"><img id="chetvertiy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR93vXz-g1JZX_DGbk9IEVJIj7AyH2CcI_6ZzsqDymbMa5T2PEi" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Левша</p></h4></td>
+	<td aligh="сenter"><img id="chetvertiy-2" src="http://seriya.net/uploads/posts/2014-09/1410176050_2020578998_poster.jpg" width="150" height="211" hspace="4" vspace="20" border="6"  class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Уцелевший</p></h4></td>
+	<td aligh="сenter"><img id="chetvertiy-3" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPr8Fda3DTS_G3sxgXX86SidO56vnp2TKfdF22DGKGm8rQ4nUF" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Тор</p></h4></td>
+	<td aligh="сenter"><img id="chetvertiy-4" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7liO7Na8dQjf3VODguT8uacaYZWA6TeDAZdSRaS1WIcgUXWwh" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Батальон</p></h4></td>
+</tr>
+	<td aligh="сenter"><img id="pyatiy" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvB7BBIMBWbHvm3Zg0kW_QQSmpJ3C0N_N52j-4-wg4XLaFns27DQ" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Мрачные Тени</p></h4></td>
+	<td aligh="сenter"><img id="pyatiy-2" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmSUKah7hCR_VtDJUQ0bnvkzOIAwJXehRnkateeyDnf61xl0C1BQ" width="150" height="211" hspace="4" vspace="20" border="6"  class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Джанго</p></h4></td>
+	<td aligh="сenter"><img id="pyatiy-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9dIgemOmQiN2w_327OAlaNZxDe8hbo4HGyfk7RFGKjVymSo2_" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Аватар</p></h4></td>
+	<td aligh="сenter"><img id="pyatiy-4" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtQ8MVmRqjcJ7ZJvd6aEMma4-ZzC_p9gPELdoCwRHZE2SroPqL" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Гостья</p></h4></td>
+</tr>
+	<td aligh="сenter"><img id="shestoy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwtzNQSombD67ncZS9ef_lark5mAUqZ8p6T5ah5pNgGkHAbFkUrw" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Тарзан</p></h4></td>
+	<td aligh="сenter"><img id="shestoy-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSGYqTTIIT131SNX9RQ3ZUi-P7cyzmWtnUWFnrG_q00ehbbz6e" width="150" height="211" hspace="4" vspace="20" border="6"  class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Дэдпул</p></h4></td>
+	<td aligh="сenter"><img id="shestoy-3" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgQOC1hb9yrqGuIZ-oi71b58x-7dPa8XVaOaA_11Y5n510AhqSug" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Телекинез</p></h4></td>
+	<td aligh="сenter"><img id="shestoy-4" src="http://www.filmposters.ru/posters/matrix_the_1999_3131_poster.jpg" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Матрица</p></h4></td>
+</tr>
+	<td aligh="сenter"><img id="sedmoy" src="http://media9.fast-torrent.ru/media/files/s4/hn/hp/matritsa-kinolyapyi-i-interesn.jpg" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Ной</p></h4></td>
+	<td aligh="сenter"><img id="sedmoy-2" src="http://novinki-kino2014.ru/wp-content/uploads/2015/01/764741-350x500.jpg" width="150" height="211" hspace="4" vspace="20" border="6"  class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Поводир</p></h4></td>
+	<td aligh="сenter"><img id="sedmoy-3" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlwuSRw3SlqPQaF1GK441rePTdUup_RBgi-3Sg__nkbtXgZwPI" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Люси</p></h4></td>
+	<td aligh="сenter"><img id="sedmoy-4" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRokgNURgL2PauUDmMVY-LTdv0gp9lvURzHxhpnOazJ9u2OWVz9" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Викинги</p></h4></td>
+</tr>
+	<td aligh="сenter"><img id="vosmoy" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8zXBJXiARJkaFdv606hcK0TxEKIFVeIEbIH5b0vXsXUgqKauz" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Серена</p></h4></td>
+	<td aligh="сenter"><img id="vosmoy-2" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS55L4J1RUZEqWLhzjFlEf7jd4lWe5uGFBnzrUt9472G-R8YUFHZQ" width="150" height="211" hspace="4" vspace="20" border="6"  class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Ярость</p></h4></td>
+	<td aligh="сenter"><img id="vosmoy-3" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxu1rNdsXHJS9ZPDX-pBb-8vB66yNOzEjBBTiUyJO0MVPWR2smxw" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Звезда</p></h4></td>
+	<td aligh="сenter"><img id="vosmoy-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpy0XKds8h0lyAxXaApJ0zUR_sWRda1lTWv23A9_h4o9xkTS0L" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Исчезнувшая</p></h4></td>
+</tr>
+	<td aligh="сenter"><img id="devyatiy" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh4XMDtsvLLrp4yASxY-RJpV3dvaIpt140yFhYfGz3nYm0CQ4jhg" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Виноваты звезды</p></h4></td>
+	<td aligh="сenter"><img id="devyatiy-2" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWatLyfK9ZUrcqDks9XfPJd5VI4jiDJVcLMEmm37b36NOanvPd" width="150" height="211" hspace="4" vspace="20" border="6"  class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Повар на колесах</p></h4></td>
+	<td aligh="сenter"><img id="devyatiy-3" src="http://novinki-kino2014.ru/wp-content/uploads/2015/03/680499-350x500.jpg" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Окулус</p></h4></td>
+	<td aligh="сenter"><img id="devyatiy-4" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOOK6aNCfUUSRmQKJTyo3FwjRSKA7MSa4zPnMQY-OkVlKKTGKi" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Интервью</p></h4></td>
+</tr>
+	<td aligh="сenter"><img id="dyesyatiy" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3JZg7U_wqxZA4jLWijdlCM_X-SzoF3z3FQG9n1Vve3jQq9JbqtQ" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Враги</p></h4></td>
+	<td aligh="сenter"><img id="dyesyatiy-2" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKVuVqb_kIVlZlssIYezlXmpx1a3_a-PnhM67MEYTaZ15gNzUM0g" width="150" height="211" hspace="4" vspace="20" border="6"  class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">В Стране Женщин</p></h4></td>
+	<td aligh="сenter"><img id="dyesyatiy-3" src="http://palikino.com/uploads/posts/2014-12/1418741284_kinopoisk.ru-whiplash-2500445.jpg" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Одержимость</p></h4></td>
+	<td aligh="сenter"><img id="dyesyatiy-4" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQW3M0vmQSTCmE_JCwKPvfkKz0mmEEQlrrXy92q66EfN3x6UCy" width="150" height="211" hspace="4" vspace="20" border="6" class="img" >
+		<button class="btn btn-small btn-success" type="button">♥LIKE♥</button> <button class="btn btn-small btn-danger" type="button">DISLIKE</button> <h4><p class="text-center">Геракл</p></h4></td>
+</tr>
+		</table>
+
+<nav>
+		<ul class="pager">
+			<li><a href="#" id="nazad" class="btn btn-large disabled"> <= Предыдущая</a></li>
+			<li><a href="#" id="first" class="btn btn-large btn-primary disabled">< 1 ></a></li>
+			<li><a href="#" id="second" class="btn btn-large">< 2 ></a></li>
+			<li><a href="#" id="next" class="btn btn-large">Следующая =></a></li>
+		</ul>
+</nav>
+	</div>
+</div>
+</body>
+</html> 

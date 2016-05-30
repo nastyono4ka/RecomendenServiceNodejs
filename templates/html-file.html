@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+	<head>
+		<meta charset="UTF-8">
+		<title>RecomendenService</title>
+		<link href="https://yastatic.net/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<div class="col-md-offset-4">
+		<div class="center">
+	
+		<h1>{{ title }}</h1>
+		
+			<table>
+		
+				{% for film_row in film_list %}
+					<tr>
+	
+					{% for film in film_row %}
+						<tr>
+						
+						<td>
+							<a href="/film/{{ film.id }}"><img src="{{ film.poster }}" width="150" height="211" hspace="4" vspace="4" border="8"> 
+						</td>
+					
+						<td>
+							<a href="/film/{{ film.id }}">
+							<h5>{{film.title}}</h5>
+							</a>
+							({{ film.pub_year }})
+						</td>
+						
+						<td align="center">
+							      Рейтинг <br>
+								  {{ film.rank }}
+						</td>
+						</tr>
+				
+					{% endfor %}
+				
+					</tr>
+						
+				
+				{% endfor %}
+			
+			</table>
+		
+			
+		</div>
+		</div>
+		
+			
+	</body>
+</html>
